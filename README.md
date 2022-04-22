@@ -81,7 +81,7 @@ No sub modules.
 | <a name="input_stickiness_enabled"></a> [stickiness\_enabled](#input\_stickiness\_enabled) | Boolean to enable / disable stickiness. | `bool` | `true` | no |
 | <a name="input_stickiness_cookie_duration"></a> [stickiness\_cookie\_duration](#input\_stickiness\_cookie\_duration) | Only used when the type is lb_cookie. The time period, in seconds, during which requests from a client should be routed to the same target. After this time period expires, the load balancer-generated cookie is considered stale. The range is 1 second to 1 week (604800 seconds). | `number` | `86400` | no |
 | <a name="input_stickiness_type"></a> [stickiness\_type](#input\_stickiness\_type) | The type of sticky sessions. The only current possible values are lb_cookie, app_cookie for ALBs, and source_ip for NLBs. | `string` | `null` | yes |
-| <a name="input_stickiness_cookie_name"></a> [stickiness\_type](#input\_stickiness\_type) | Name of the application based cookie. AWSALB, AWSALBAPP, and AWSALBTG prefixes are reserved and cannot be used. Only needed when type is app_cookie. | `string` | `null` | no |
+| <a name="input_stickiness_cookie_name"></a> [stickiness\_cookie\_name](#input\_stickiness\_type) | Name of the application based cookie. AWSALB, AWSALBAPP, and AWSALBTG prefixes are reserved and cannot be used. Only needed when type is app_cookie. | `string` | `null` | no |
 
 ## Outputs
 
